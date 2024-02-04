@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 200 200">
+  <path fill="#00a1e6"
+    d="M145.68,170.71H54.26c-13.8173,0-25.0144-11.6-25-25.8993l.06-59.11A26.109,26.109,0,0,1,40.7209,64.0184L86.2837,33.4522a24.2943,24.2943,0,0,1,27.1433-.0363l45.8577,30.5905A26.1077,26.1077,0,0,1,170.74,85.78l-.06,59.0853C170.666,159.1433,159.4773,170.71,145.68,170.71Z"
+    class="colora1d0ff svgShape"></path>
+  <line x1="78.501" x2="121.387" y1="137.415" y2="137.415" fill="currentColor" stroke="#ddd"
+    stroke-linecap="round" stroke-linejoin="round" stroke-width="13"
+    class="colorStroke4285f4 svgStroke"></line>
+</svg>

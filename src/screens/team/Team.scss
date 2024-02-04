@@ -1,0 +1,138 @@
+.team-heading {
+   font-weight: 800;
+   font-size: 5rem;
+   margin-bottom: 5rem;
+   text-align: center;
+}
+
+.team_container {
+   width: min(130rem, 100% - 5rem);
+   margin-inline: auto;
+   
+   .team_wrapper {
+      background: linear-gradient(-45deg, #F014C0,#FFC700, #FFC700);
+      // background-image: url('https://source.unsplash.com/random/700x700?blur');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-block: 5rem;
+      // margin-bottom: 5rem;
+      padding-inline: 2rem;
+      margin-left: calc(-50vw + 50%); 
+      margin-right: calc(-50vw + 50%);
+
+      .card_container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-wrap: wrap;
+         gap: 3rem;
+
+         > div {
+            width: 30rem;
+            height: 40rem;
+            max-width: 30rem;
+            position: relative;
+            transition: transform 200ms ease-in-out;
+
+            &:hover {
+               transform: scale(1.02);
+            }
+
+            > div {
+               position: absolute;
+               
+               &:first-child {
+                  top: 0;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  height: 60%;
+                  width: 80%;
+                  background: #a1a1a1;
+                  z-index: 10;
+                  border-radius: 50% 50% 50% 0;
+                  overflow: hidden;
+                  box-shadow: 0 0 10px #00000030;
+                  background: linear-gradient(to right, #f0148d, #ffa822, #ffa822);
+
+                  
+                  > div {
+                     // background-image: url('https:/source.unsplash.com/random/300x300?women-face');
+                     background-position: center;
+                     background-size: cover;
+                     position: absolute;
+                     inset: 0;
+                     border-radius: 50% 50% 50% 0;
+                     transform: translate(4%,-4%);
+                     box-shadow: 0 0 5px #00000020;
+                     background-color: #ddd;
+                     transition: transform 500ms ease-in-out;
+                     overflow: hidden;
+
+                     img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                     }
+                     
+                     &:hover {
+                        transform: translate(0, 0) scale(1.05);
+                        transition: transform 300ms ease-in-out;
+                     }
+                  }
+               }
+               
+               &:last-child {
+                  bottom: 0;
+                  height: 70%;
+                  width: 100%;
+                  background: #e2e2e257;
+                  border-radius: 20% 20% 10% 10%;
+                  backdrop-filter: blur(1rem);
+                  border: 1px solid #ffffff40;
+                  display: flex;
+                  align-items: end;
+                  justify-content: center;
+                  padding: 2rem;
+
+                  > div {
+                     margin-bottom: 1rem;
+                     
+                     > h4 {
+                        font-size: 2.5rem;
+                        font-weight: 600;
+                     }
+                     > p {
+                        font-size: 1.8rem;
+                        margin-bottom: .8rem;
+                        margin-top: .4rem;
+                        background-image: linear-gradient(to right, #ffa822, #f0148d, transparent);
+                        padding: .2rem .5rem;
+                        border-radius: 5px;
+                     }
+                     > span {
+                        font-size: medium;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .team_container {
+      display: none;
+   }
+   .team-heading {
+      font-size: 4.2rem;
+   }
+}
+
+@media (max-width: 500px) {
+   .team-heading {
+      font-size: 3rem;
+
+   }
+}
